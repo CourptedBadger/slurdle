@@ -29,10 +29,7 @@ def load_words() -> list[str]:
         if words:
             return words
     # Safe default list (replace with your own list in words.txt)
-    return [
-        "crane", "slate", "adieu", "trace", "fling", "mound", "pride", "charm", "bloom", "glyph",
-        "zesty", "caper", "tiger", "spoke", "nifty", "round", "sugar", "brave", "quiet", "light",
-    ]
+    return ['abbie', 'abeed', 'aired', 'argie', 'aseng', 'asing', 'bahia', 'bantu', 'batak', 'bimbo', 'bindi', 'bitch', 'boang', 'boche', 'bosch', 'bulba','bunga', 'chink','cholo', 'chong', 'cokin','cushi', 'dalle', 'darky','dhoti', 'dogan', 'dogun','fricc', 'fritz', 'gabel','gadjo', 'galla', 'garoi', 'ghati', 'ginzo', 'gippo', 'godon', 'gooky','goyim', 'goyum', 'grago', 'groid', 'gubba', 'guido', 'gyppo', 'gyppy','gypsy', 'hadji', 'hajji', 'hamba', 'haole','hujaa', 'hunky', 'hurri', 'hymie', 'injun','jakun', 'jamet', 'jawir', 'jerry', 'jidan', 'jidov','jocky', 'kafir', 'kalar', 'kalia', 'kallu', 'katwa', 'katwe', 'kebab', 'khach','kraut', 'labas','leupe', 'limey', 'lubra', 'lugan', 'lyakh', 'majus', 'malau','malon', 'manne','mocro', 'momos', 'namak','nawar', 'neger', 'negro', 'nichi', 'nidge', 'nigar', 'niger', 'nigga', 'nigor','nigra', 'nigre','paddy', 'penis', 'piker', 'pikey','plouc', 'pocha', 'pocho', 'polak', 'pommy', 'pshek', 'pussy','rapes', 'raper','roske', 'ruski','seppo', 'shina','slant','slobo', 'slope', 'slopy','sooty','spade','spick', 'spook', 'squaw','szkop', 'szwab', 'taffy', 'tanka', 'tibla', 'timur', 'today', 'tonto', 'turco', 'turko', 'turks', 'ukrop', 'vanja', 'wigga']
 
 
 def choose_answer(words: list[str]) -> str:
