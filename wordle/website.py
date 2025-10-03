@@ -177,8 +177,8 @@ if not st.session_state.game_over:
             st.rerun()
 else:
     col1, col2 = st.columns(2)
-    st.success(f"You lost, you f***ing {st.session_state.answer.upper()}")
-    #st.success(f"The word was {st.session_state.answer.upper()}")
+    st.success(f"You lost :(")
+    st.success(f"The word was {st.session_state.answer.upper()}")
     if col1.button("Play again"):
         st.session_state.answer = choose_answer(st.session_state.words)
         st.session_state.guesses = []
