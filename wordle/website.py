@@ -22,14 +22,14 @@ def load_words() -> list[str]:
     """Load candidate words. If words.txt exists (one word per line), use it.
     Otherwise, fall back to a small default list.
     """
-    p = Path("words.txt")
-    if p.exists():
-        words = [w.strip().lower() for w in p.read_text(encoding="utf-8").splitlines()]
-        words = [w for w in words if len(w) == WORD_LENGTH and all(ch in string.ascii_lowercase for ch in w)]
-        if words:
-            return words
+    # p = Path("words.txt")
+    # if p.exists():
+    #     words = [w.strip().lower() for w in p.read_text(encoding="utf-8").splitlines()]
+    #     words = [w for w in words if len(w) == WORD_LENGTH and all(ch in string.ascii_lowercase for ch in w)]
+    #     if words:
+    #         return words
     # Safe default list (replace with your own list in words.txt)
-    return ['abbie', 'abeed', 'aired', 'argie', 'aseng', 'asing', 'bahia', 'bantu', 'batak', 'bimbo', 'bindi', 'bitch', 'boang', 'boche', 'bosch', 'bulba','bunga', 'chink','cholo', 'chong', 'cokin','cushi', 'dalle', 'darky','dhoti', 'dogan', 'dogun','fricc', 'fritz', 'gabel','gadjo', 'galla', 'garoi', 'ghati', 'ginzo', 'gippo', 'godon', 'gooky','goyim', 'goyum', 'grago', 'groid', 'gubba', 'guido', 'gyppo', 'gyppy','gypsy', 'hadji', 'hajji', 'hamba', 'haole','hujaa', 'hunky', 'hurri', 'hymie', 'injun','jakun', 'jamet', 'jawir', 'jerry', 'jidan', 'jidov','jocky', 'kafir', 'kalar', 'kalia', 'kallu', 'katwa', 'katwe', 'kebab', 'khach','kraut', 'labas','leupe', 'limey', 'lubra', 'lugan', 'lyakh', 'majus', 'malau','malon', 'manne','mocro', 'momos', 'namak','nawar', 'neger', 'negro', 'nichi', 'nidge', 'nigar', 'niger', 'nigga', 'nigor','nigra', 'nigre','paddy', 'penis', 'piker', 'pikey','plouc', 'pocha', 'pocho', 'polak', 'pommy', 'pshek', 'pussy','rapes', 'raper','roske', 'ruski','seppo', 'shina','slant','slobo', 'slope', 'slopy','sooty','spade','spick', 'spook', 'squaw','szkop', 'szwab', 'taffy', 'tanka', 'tibla', 'timur', 'today', 'tonto', 'turco', 'turko', 'turks', 'ukrop', 'vanja', 'wigga']
+    return ["beans"]
 
 
 def choose_answer(words: list[str]) -> str:
@@ -138,7 +138,7 @@ if st.sidebar.button("🔁 New Answer / Restart"):
     st.rerun()
 
 # -------------------- Main --------------------
-st.title("Slurdle")
+st.title("Beans")
 st.caption("Type a 5-letter guess and press Enter. You have 6 guesses.")
 
 render_board(st.session_state.guesses, st.session_state.feedbacks)
